@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBC211CE-2CB6-4F02-90AB-DF182CCD68DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TheErrorApp</RootNamespace>
+    <AssemblyName>TheErrorApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\BLL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminDash.Designer.cs">
+      <DependentUpon>frmAdminDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminReport.Designer.cs">
+      <DependentUpon>frmAdminReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorSolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorSolution.Designer.cs">
+      <DependentUpon>frmErrorSolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLecturerDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLecturerDash.Designer.cs">
+      <DependentUpon>frmLecturerDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLecturerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLecturerReport.Designer.cs">
+      <DependentUpon>frmLecturerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModuleError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuleError.Designer.cs">
+      <DependentUpon>frmModuleError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModules.Designer.cs">
+      <DependentUpon>frmModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModuleStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuleStudent.Designer.cs">
+      <DependentUpon>frmModuleStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModuleTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuleTopic.Designer.cs">
+      <DependentUpon>frmModuleTopic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgLanguages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgLanguages.Designer.cs">
+      <DependentUpon>frmProgLanguages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResetPassword.Designer.cs">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchErrors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchErrors.Designer.cs">
+      <DependentUpon>frmSearchErrors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudent.Designer.cs">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLecture.Designer.cs">
+      <DependentUpon>frmLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentDash.Designer.cs">
+      <DependentUpon>frmStudentDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTopic.Designer.cs">
+      <DependentUpon>frmTopic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWelcome.Designer.cs">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminDash.resx">
+      <DependentUpon>frmAdminDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminReport.resx">
+      <DependentUpon>frmAdminReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorSolution.resx">
+      <DependentUpon>frmErrorSolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLecturerDash.resx">
+      <DependentUpon>frmLecturerDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLecturerReport.resx">
+      <DependentUpon>frmLecturerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuleError.resx">
+      <DependentUpon>frmModuleError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModules.resx">
+      <DependentUpon>frmModules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuleStudent.resx">
+      <DependentUpon>frmModuleStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuleTopic.resx">
+      <DependentUpon>frmModuleTopic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgLanguages.resx">
+      <DependentUpon>frmProgLanguages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResetPassword.resx">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchErrors.resx">
+      <DependentUpon>frmSearchErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudent.resx">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLecture.resx">
+      <DependentUpon>frmLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentDash.resx">
+      <DependentUpon>frmStudentDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTopic.resx">
+      <DependentUpon>frmTopic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWelcome.resx">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
