@@ -1,0 +1,1 @@
+This is a Windows application project which was intended to help programming students to get solutions for the errors they encounter when working on projects. The student would post an error description and a lecturer would post a solution for the error.
